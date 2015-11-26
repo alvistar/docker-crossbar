@@ -5,17 +5,10 @@ be run as follows
 ## Create Router
 To create a router, do the following
 
-    docker run -p 8080:8080 thehq/crossbar
+    docker run -p 8080-8081:8080-8081 thehq/crossbar
 
-You should be able to go to
-
-    http://<ip_address>:8080
-    
-And you will see a web page that just says
-
-    Application Router
-    
-The default realm is "realm1" and there is no authentication.
+Port 8080 is for rawsocket
+Port 8081 is for websocket
 
 ## Changing Default Version
 You can change the default version by specifying the following at the docker command line
